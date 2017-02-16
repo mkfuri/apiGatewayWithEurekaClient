@@ -1,0 +1,11 @@
+application:
+  name: ApiGateway
+server:
+  port: 8081
+
+eureka:
+  client:
+    registerWithEureka: false
+
+
+logging.level.com.navent.realestate.examples.feign.MyMicroServiceClient: DEBUG
