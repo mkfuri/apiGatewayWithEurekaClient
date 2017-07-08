@@ -1,7 +1,7 @@
 application:
   name: ApiGateway
 server:
-  port: 8081
+  port: 8082
 
 eureka:
   client:
