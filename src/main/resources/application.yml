@@ -3,9 +3,14 @@ application:
 server:
   port: 8082
 
-eureka:
-  client:
-    registerWithEureka: false
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 20000
 
-
-logging.level.com.navent.realestate.examples.feign.MyMicroServiceClient: DEBUG
+api-core:
+  ribbon:
+    listOfServers: api-realestate.sandbox.navent.biz
